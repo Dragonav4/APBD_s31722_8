@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace APBD_s31722_8_API.Models;
+namespace APBD_s31722_8_API.Datalayer.Models;
 
 public class ClientDto
 {

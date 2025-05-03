@@ -1,14 +1,11 @@
-using Microsoft.AspNetCore.Mvc;
+using APBD_s31722_8_API.Datalayer;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers(); 
+builder.Services.AddScoped<DbClient>();
 
 var app = builder.Build();
-
-
-
-app.UseHttpsRedirection();
 
 app.UseRouting();
 app.MapControllers();
