@@ -17,6 +17,7 @@ public class TripDto
 
     public TripDto()
     {
+        
     }
     
     public TripDto(SqlDataReader reader)
@@ -37,7 +38,7 @@ public class TripDto
         try
         {
             var fieldValue = reader[fieldName].ToString();
-            return DateTime.ParseExact(fieldValue, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+            return DateTime.ParseExact(fieldValue, "yyyyMMdd", CultureInfo.InvariantCulture);
         }
         catch
         {

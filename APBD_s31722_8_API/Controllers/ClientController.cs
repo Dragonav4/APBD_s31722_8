@@ -153,7 +153,7 @@ public class ClientController : ControllerBase
                 new Dictionary<string, object>{
                     {"@Id", id},
                     {"@tripId", tripId},
-                    {"@RegisteredAt", DateTime.Now.Year+1000+DateTime.Now.Month*100+DateTime.Now.Day}
+                    {"@RegisteredAt", DateTime.Now.Year*10000+DateTime.Now.Month*100+DateTime.Now.Day}
                     });
 
             return NoContent();
